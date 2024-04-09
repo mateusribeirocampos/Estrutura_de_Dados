@@ -29,7 +29,7 @@ Ao trabalhar com estruturas de dados lineares em C++, como vetores, é important
 
    vector<int> vint;
 
-´´´
+```
 
 2. **Vetor com Tamanho e Valor Inicial:** Cria um vetor com 10 elementos, todos inicializados com o valor 0.
 
@@ -37,7 +37,7 @@ Ao trabalhar com estruturas de dados lineares em C++, como vetores, é important
 
    vector<int> ovi(10, 0);
 
-´´´
+```
 
 3. **Vetor de Tipos Personalizados:** Cria um vetor de objetos personalizados.
 
@@ -50,7 +50,7 @@ Ao trabalhar com estruturas de dados lineares em C++, como vetores, é important
 
    vector<Pessoa> pessoas;
 
-´´´
+```
 
 4. **Vetor de Vetores:** Um vetor cujos elementos são vetores, útil para representar matrizes.
 
@@ -58,7 +58,7 @@ Ao trabalhar com estruturas de dados lineares em C++, como vetores, é important
 
    vector< vector<int>> matriz;
 
-´´´
+```
 
 5. **Vetor de Ponteiros:** Armazena ponteiros para elementos.
 
@@ -66,7 +66,7 @@ Ao trabalhar com estruturas de dados lineares em C++, como vetores, é important
 
    vector<int*> ponteiros;
 
-´´´
+```
 
 6. **Vetor de Objetos Inteligentes:** Usa ponteiros inteligentes para gerenciar automaticamente a memória.
 
@@ -74,7 +74,7 @@ Ao trabalhar com estruturas de dados lineares em C++, como vetores, é important
 
    vector<unique_ptr<Pessoa>> pessoas;
 
-´´´
+```
 
 7. **Vetor Constante:** Um vetor cujos elementos não podem ser modificados após a inicialização.
 
@@ -82,7 +82,7 @@ Ao trabalhar com estruturas de dados lineares em C++, como vetores, é important
 
    const vector<int> vetorConstante {1, 2, 3, 4, 5};
 
-´´´
+```
 
 8. **Vetor de Tamanho Dinâmico:** Cria um vetor com tamanho determinado em tempo de execução.
 
@@ -93,4 +93,4 @@ Ao trabalhar com estruturas de dados lineares em C++, como vetores, é important
    cin >> tamanho;
    vector<int> vetorDinamico(tamanho);
 
-´´´
+```
