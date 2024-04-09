@@ -13,7 +13,7 @@ int main () {
     // vetor criaado com 0 elementos
     vector<int> vint;
 
-    // 
+    // capacity() retorna o tamanho do vetor
     int espaco = vint.capacity();
 
     // vetor criado com 10 elementos de valor 0
