@@ -10,7 +10,7 @@ struct Pessoa {
 };
 
 int main () {
-    // vetor criaado com 0 elementos
+    // vetor criado com 0 elementos
     vector<int> vint;
 
     // capacity() retorna o tamanho do vetor
