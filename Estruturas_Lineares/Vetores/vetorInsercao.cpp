@@ -19,20 +19,26 @@ int main () {
 
     imprimirVetor(vint);
 
-    /*
     // Inserindo um elemento no início do vetor
     vint.insert(vint.begin(), 0);
 
+    imprimirVetor(vint);
+    
     // Inserindo um elemento na posição 3
     vint.insert(vint.begin() + 3, 10);
+
+    imprimirVetor(vint);
 
     // Inserindo 3 elementos de valor 7 na posição 5
     vint.insert(vint.begin() + 5, 3, 7);
 
+    imprimirVetor(vint);
+
     // Inserindo elementos de um vetor em outro vetor
     vector<int> vint2 = {8, 9, 10};
     vint.insert(vint.begin() + 7, vint2.begin(), vint2.end());
-    */
     
+    imprimirVetor(vint);
+
     return 0;
 }
