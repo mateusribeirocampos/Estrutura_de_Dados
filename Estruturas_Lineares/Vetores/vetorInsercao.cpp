@@ -3,42 +3,42 @@
 
 using namespace std;
 
-void imprimirVetor(vector<int> vint) {
-    for (int i = 0; i < vint.size(); i++) {
-        cout << vint[i] << " ";
+void imprimirVetor(vector<int> array) {
+    for (int i = 0; i < array.size(); i++) {
+        cout << array[i] << " ";
     }
     cout << endl;
 }
 
 
 int main () {
-    vector<int> vint = {1, 2, 3, 4, 5};
+    vector<int> array = {1, 2, 3, 4, 5};
 
     // Inserindo um elemento no final do vetor
-    vint.push_back(6);
+    array.push_back(6);
 
-    imprimirVetor(vint);
+    imprimirVetor(array);
 
     // Inserindo um elemento no início do vetor
-    vint.insert(vint.begin(), 0);
+    array.insert(array.begin(), 0);
 
-    imprimirVetor(vint);
+    imprimirVetor(array);
     
     // Inserindo um elemento na posição 3
-    vint.insert(vint.begin() + 3, 10);
+    array.insert(array.begin() + 3, 10);
 
-    imprimirVetor(vint);
+    imprimirVetor(array);
 
     // Inserindo 3 elementos de valor 7 na posição 5
-    vint.insert(vint.begin() + 5, 3, 7);
+    array.insert(array.begin() + 5, 3, 7);
 
-    imprimirVetor(vint);
+    imprimirVetor(array);
 
     // Inserindo elementos de um vetor em outro vetor
     vector<int> vint2 = {8, 9, 10};
-    vint.insert(vint.begin() + 7, vint2.begin(), vint2.end());
+    array.insert(array.begin() + 7, vint2.begin(), vint2.end());
     
-    imprimirVetor(vint);
+    imprimirVetor(array);
 
     return 0;
 }
