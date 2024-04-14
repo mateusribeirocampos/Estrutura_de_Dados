@@ -21,60 +21,63 @@ As estruturas de dados lineares são aquelas em que os elementos são organizado
 
 4. **Fila (Queue):** Uma estrutura de dados FIFO (First In, First Out), onde os elementos são inseridos em uma extremidade e removidos na outra.
 
-Ao trabalhar com estruturas de dados lineares em C++, como vetores, é importante entender as diferentes formas de representá-los. Abaixo estão algumas das principais maneiras de representar vetores em C++:
+## Estruturas de Dados Não Lineares
 
-1.**Vetor Padrão:** Um vetor padrão que cria um vetor vazio.
+1. **Árvore Binária:** Uma estrutura de dados em que cada nó tem no máximo dois filhos, conhecidos como o filho esquerdo e o filho direito. As árvores binárias são frequentemente usadas em algoritmos de busca e em estruturas de dados mais complexas, como árvores de busca binária e árvores AVL.
 
-```cpp
-   vector<int> vint;
+2. **Árvore de Busca Binária (Binary Search Tree - BST):** Uma árvore binária na qual os nós são organizados de maneira que, para cada nó, todos os nós à esquerda têm valores menores e todos os nós à direita têm valores maiores. Isso permite a busca eficiente de elementos em tempo logarítmico.
+
+3. **Árvore AVL (Adelson-Velsky e Landis):** Uma árvore binária de busca balanceada na qual a altura das subárvores esquerda e direita de cada nó difere no máximo em uma unidade. Isso garante que a árvore permaneça balanceada e mantém o desempenho de operações como inserção, exclusão e busca em tempo logarítmico.
+
+4. **Árvore B (Rudolf Bayer):** Uma árvore de busca que é uma generalização da árvore binária de busca, na qual cada nó pode ter mais de dois filhos. As árvores B são frequentemente usadas em bancos de dados e sistemas de arquivos para organizar grandes volumes de dados.
+
+5. **Grafo:** Uma estrutura de dados que consiste em um conjunto de vértices (ou nós) e um conjunto de arestas (ou conexões) que conectam esses vértices. Os grafos podem ser direcionados (quando as arestas têm uma direção) ou não direcionados (quando as arestas não têm uma direção). Eles são usados em uma variedade de problemas, incluindo redes de computadores, sistemas de transporte e análise de redes sociais.
+
+O estudo foi estruturado no repositório nesse formato:
+
+```cmd
+- estrutura-de-dados/
+  - lineares/
+    - vetores/
+      - tipos-de-vetores.cpp
+      - vetores-insercao.cpp
+      - vetores-remocao.cpp
+    - lista-encadeada/
+      - implementacao.cpp
+      - insercao.cpp
+      - remocao.cpp
+    - pilha/
+      - implementacao.cpp
+      - operacoes.cpp
+    - fila/
+      - implementacao.cpp
+      - operacoes.cpp
+  - nao-lineares/
+    - arvore-binaria/
+      - implementacao.cpp
+      - busca.cpp
+      - insercao.cpp
+      - remocao.cpp
+    - arvore-de-busca-binaria/
+      - implementacao.cpp
+      - busca.cpp
+      - insercao.cpp
+      - remocao.cpp
+    - arvore-avl/
+      - implementacao.cpp
+      - busca.cpp
+      - insercao.cpp
+      - remocao.cpp
+    - arvore-b/
+      - implementacao.cpp
+      - busca.cpp
+      - insercao.cpp
+      - remocao.cpp
+    - grafo/
+      - implementacao.cpp
+      - busca-em-largura.cpp
+      - busca-em-profundidade.cpp
+      - algoritmo-de-Dijkstra.cpp
 ```
 
-2.**Vetor com Tamanho e Valor Inicial:** Cria um vetor com 10 elementos, todos inicializados com o valor 0.
-
-```cpp
-   vector<int> ovi(10, 0);
-```
-
-3.**Vetor de Tipos Personalizados:** Cria um vetor de objetos personalizados.
-
-```cpp
-   struct Pessoa {
-       string nome;
-       int idade;
-   };
-
-   vector<Pessoa> pessoas;
-```
-
-4.**Vetor de Vetores:** Um vetor cujos elementos são vetores, útil para representar matrizes.
-
-```cpp
-   vector< vector<int>> matriz;
-```
-
-5.**Vetor de Ponteiros:** Armazena ponteiros para elementos.
-
-```cpp
-   vector<int*> ponteiros;
-```
-
-6.**Vetor de Objetos Inteligentes:** Usa ponteiros inteligentes para gerenciar automaticamente a memória.
-
-```cpp
-   vector<unique_ptr<Pessoa>> pessoas;
-```
-
-7.**Vetor Constante:** Um vetor cujos elementos não podem ser modificados após a inicialização.
-
-```cpp
-   const vector<int> vetorConstante {1, 2, 3, 4, 5};
-```
-
-8.**Vetor de Tamanho Dinâmico:** Cria um vetor com tamanho determinado em tempo de execução.
-
-```cpp
-   int tamanho;
-   cout << "Digite o tamanho do vetor: ";
-   cin >> tamanho;
-   vector<int> vetorDinamico(tamanho);
-```
+## Referências

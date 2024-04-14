@@ -35,3 +35,8 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+Vetores/vetoresRemocao.dSYM/
+
+#VScode
+.vscode
+Estruturas_Lineares/Vetores/vetoresRemocao.dSYM/Contents/Info.plist
