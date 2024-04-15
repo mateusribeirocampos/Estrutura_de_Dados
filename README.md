@@ -42,6 +42,7 @@ O estudo foi estruturado no repositório nesse formato:
       - tipos-de-vetores.cpp
       - vetores-insercao.cpp
       - vetores-remocao.cpp
+      - vetores-struct.cpp
     - lista-encadeada/
       - implementacao.cpp
       - insercao.cpp
