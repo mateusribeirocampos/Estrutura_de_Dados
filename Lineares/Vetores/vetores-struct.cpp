@@ -46,11 +46,38 @@ void imprimirFuncionarios() {
     }
 }
 
+// função para buscar um funcionario pelo nome
+void buscarFuncionario() {
+    int posicao = -1; // Inicializa a posição como -1 para indicar que o funcionário não foi encontrado
+    std::cout << "\nDigite o nome do funcionario que deseja buscar: ";
+    std::string nome;
+    std::cin >> nome;
+
+    for(int i=0; i<TAM; i++) {
+        if(nome.compare(func[i].nome) == 0) {
+            std::cout << "\nRegistro encontrado!" << std::endl;
+            posicao = i; // Atribui a posição do funcionário encontrado
+            break; // Sai do loop assim que o funcionário é encontrado
+        }
+    }
+
+    if(posicao == -1) {
+        std::cout << "\nRegistro nao encontrado!";
+    } else {
+        std::cout << "\nO nome do funcionario: " << func[posicao].nome << std::endl;
+        std::cout << "Idade: " << func[posicao].idade << std::endl;
+        std::cout << "Salario: " << func[posicao].salario << std::endl;
+    }
+}
+
+
 int main()
 {
     inserirDadosFuncionarios();
 
     imprimirFuncionarios();
+
+    buscarFuncionario();
 
     return 0;
 }
