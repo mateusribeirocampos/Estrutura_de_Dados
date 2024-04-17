@@ -38,13 +38,18 @@ O estudo foi estruturado no repositório nesse formato:
 ```cmd
 - estrutura-de-dados/
   - lineares/
-    - vetores/
-      - tipos-de-vetores.cpp
-      - vetores-insercao.cpp
-      - vetores-remocao.cpp
-      - vetores-struct.cpp
-    - lista-encadeada/
-      - implementacao.cpp
+    - 01vetores/
+      - 01sintaxe-vetores.cpp
+      - 02vetores-insercao.cpp
+      - 03vetores-remocao.cpp
+      - 04vetores-acesso.cpp
+      - 05vetores-alocacaoDinamica.cpp
+      - 06vetores-struct.cpp
+      - 07vetores-constante.cpp
+      - 08vetores-ponteiros.cpp
+      - 09extraPassagem-ponteiro.cpp
+    - 02lista-encadeada/
+      - 01implementacao.cpp
       - insercao.cpp
       - remocao.cpp
     - pilha/
