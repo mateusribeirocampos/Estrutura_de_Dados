@@ -86,4 +86,33 @@ O estudo foi estruturado no repositório nesse formato:
       - algoritmo-de-Dijkstra.cpp
 ```
 
+## Como Usar
+
+Clone o repositório:
+
+```cmd
+git clone https://github.com/seu-usuario/estrutura-de-dados.git
+cd estrutura-de-dados
+```
+
+Navegue até a pasta desejada e compile o arquivo:
+
+```cmd
+cd lineares/01vetores
+g++ 01sintaxe-vetores.cpp -o sintaxe-vetores
+./sintaxe-vetores
+```
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests. Por favor, siga as boas práticas de codificação e documente bem o seu código.
+
+Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+
 ## Referências
+
+[Open Structure - org](https://opendatastructures.org/)
+ou [Estruturas abertas](https://opendatastructures.org/)
+
+[Geeks for Geeks - Data Structures](https://www.geeksforgeeks.org/data-structures/)
