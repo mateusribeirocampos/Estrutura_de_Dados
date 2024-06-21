@@ -15,11 +15,13 @@ As estruturas de dados lineares são aquelas em que os elementos são organizado
 
 1. **Vetor (Array):** Uma coleção de elementos do mesmo tipo, organizados em sequência contígua de memória.
 
-2. Lista Encadeada (Linked List): Uma coleção de elementos, onde cada elemento (nó) contém um valor e um ponteiro para o próximo nó na sequência.
+2. **Lista Sequencial (Static List):** Uma coleção de elementos armazenados de forma contígua, onde operações de inserção, remoção e busca são realizadas em um array fixo.
 
-3. **Pilha (Stack):** Uma estrutura de dados LIFO (Last In, First Out), onde os elementos são inseridos e removidos na mesma extremidade.
+3. **Lista Encadeada (Linked List):** Uma coleção de elementos, onde cada elemento (nó) contém um valor e um ponteiro para o próximo nó na sequência.
 
-4. **Fila (Queue):** Uma estrutura de dados FIFO (First In, First Out), onde os elementos são inseridos em uma extremidade e removidos na outra.
+4. **Pilha (Stack):** Uma estrutura de dados LIFO (Last In, First Out), onde os elementos são inseridos e removidos na mesma extremidade.
+
+5. **Fila (Queue):** Uma estrutura de dados FIFO (First In, First Out), onde os elementos são inseridos em uma extremidade e removidos na outra.
 
 ## Estruturas de Dados Não Lineares
 
@@ -48,14 +50,19 @@ O estudo foi estruturado no repositório nesse formato:
       - 07vetores-constante.cpp
       - 08vetores-ponteiros.cpp
       - 09extraPassagem-ponteiro.cpp
-    - 02lista-encadeada/
-      - 01implementacao.cpp
+    - 02listas-sequenciais/
+      - implementacao.cpp
       - insercao.cpp
       - remocao.cpp
-    - pilha/
+      - busca.cpp
+    - 03lista-encadeada/
+      - implementacao.cpp
+      - insercao.cpp
+      - remocao.cpp
+    - 04pilha/
       - implementacao.cpp
       - operacoes.cpp
-    - fila/
+    - 05fila/
       - implementacao.cpp
       - operacoes.cpp
   - nao-lineares/
