@@ -20,9 +20,9 @@ class Lista {
         int numeroElemento;
     public:
         Lista();
-        void inicializaLista(){};
+        void inicializaLista();
         int tamanhoLista() const;
-        void exibeLista() const;
+        void exibeLista();
         int buscaSequencial(TIPOCHAVE chave);
         bool insereElemento(Registro registro);
         bool exclueElemento(TIPOCHAVE chave);
