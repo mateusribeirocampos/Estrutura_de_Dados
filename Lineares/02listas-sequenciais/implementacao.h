@@ -11,15 +11,18 @@ struct Registro {
         TIPOCHAVE chave;
 };
 
+// Sobrecarga do operador de inserção para permitir impressão de Registro
+std::ostream& operator<<(std::ostream& os, const Registro& reg);
+
 class Lista {
     private:
         Registro array[MAX];
         int numeroElemento;
     public:
-        Lista() {};
-        void inicializaLista(Lista *lista){};
-        int tamanhoLista(Lista *lista){};
-        void exibeLista(Lista *lista);
+        Lista();
+        void inicializaLista(){};
+        int tamanhoLista() const;
+        void exibeLista() const;
         int buscaSequencial(TIPOCHAVE chave);
         bool insereElemento(Registro registro);
         bool exclueElemento(TIPOCHAVE chave);

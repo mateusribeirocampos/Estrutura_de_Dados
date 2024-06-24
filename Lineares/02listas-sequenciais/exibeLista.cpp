@@ -1,11 +1,11 @@
 #include "implementacao.h"
 #include <iostream>
 
-void Lista::exibeLista(Lista *lista){
+void Lista::exibeLista() const {
     std::cout << "Lista:[";
-    for(int i = 0; i < lista->numeroElemento; i++){
-        std::cout << lista->array[i];
-        if(i < lista->numeroElemento - 1)
+    for(int i = 0; i < numeroElemento; i++){
+        std::cout << array[i];
+        if(i < numeroElemento - 1)
         {
         std::cout << ", ";
         }
