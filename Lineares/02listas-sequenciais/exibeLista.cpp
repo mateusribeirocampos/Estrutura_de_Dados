@@ -1,7 +1,7 @@
 #include "implementacao.h"
 #include <iostream>
 
-void Lista::exibeLista() const {
+void Lista::exibeLista() {
     std::cout << "Lista:[";
     for(int i = 0; i < numeroElemento; i++){
         std::cout << array[i];
