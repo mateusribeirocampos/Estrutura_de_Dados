@@ -8,10 +8,10 @@ int main(){
     Registro reg3 = {5};
     Registro reg4 = {7};
 
-    lista.insereElemento(reg1);
-    lista.insereElemento(reg2);
-    lista.insereElemento(reg3);
-    lista.insereElemento(reg4);
+    lista.insereElemento(reg1, 0);
+    lista.insereElemento(reg2, 1);
+    lista.insereElemento(reg3, 2);
+    lista.insereElemento(reg4, 3);
 
     lista.exibeLista();
 
@@ -19,7 +19,10 @@ int main(){
 
     lista.exibeLista();
 
-    int encontraElemento = lista.buscaSequencial(6);
+    int elementoUsuario = 0;
+    std::cout << "Digite o elemento a ser buscado:" << std::endl;
+    std::cin >> elementoUsuario;
+    int encontraElemento = lista.buscaSequencial(elementoUsuario);
     if(encontraElemento == -1){
         std::cout << "Elemento nao encontrado!" << std::endl;
     }
@@ -29,13 +32,18 @@ int main(){
 
     lista.exibeLista();
 
-    encontraElemento = lista.buscaSequencial(7);
+    std::cout << "Digite o elemento a ser buscado:" << std::endl;
+    std::cin >> elementoUsuario;
+    encontraElemento = lista.buscaSequencial(elementoUsuario);
     if(encontraElemento == -1){
         std::cout << "Elemento nao encontrado!" << std::endl;
     }
     else{
         std::cout << "Elemento encontrado!" << std::endl;
     }
+
+    lista.reiniciaLista();
+    lista.exibeLista();
 
 
     return 0;
