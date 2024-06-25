@@ -10,4 +10,5 @@ void Lista::exibeLista() {
         std::cout << ", ";
         }
     }
+    std::cout << "]" << std::endl;
 }

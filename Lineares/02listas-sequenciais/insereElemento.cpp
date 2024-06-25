@@ -1,16 +1,22 @@
 #include "implementacao.h"
 
-bool Lista::insereElemento(Registro reg){
-    if((numeroElemento == MAX) || (reg.chave < 0) || (reg.chave > numeroElemento)){
-        std::cout << "O numero " << reg.chave << " foi adicionado na lista" << std::endl;
-        return false;
-    }
-    for(int j = numeroElemento; j > reg.chave; j--){
-        array[j] = array[j-1];
-    }
-    array[numeroElemento] = reg;
-    numeroElemento++;
-    std::cout << "O numero " << array[numeroElemento].chave << " foi adicionado na lista" << std::endl;
-    std::cout << "Atulizando o tamanho da lista: " << numeroElemento << std::endl;
-    return true;
+bool Lista::insereElemento(Registro reg, int posicao) {
+  if (numeroElemento == MAX) {
+    std::cout << "Lista cheia!" << std::endl;
+    return false;
+  } else if ((reg.chave < 0) || (reg.chave > MAX)) {
+    std::cout << "a chave do registro esta fora do intervalo valido!"
+              << std::endl << std::endl;
+    return false;
+  }
+  for (int j = numeroElemento; j > reg.chave; j--) {
+    array[j] = array[j - 1];
+  }
+  array[posicao] = reg;
+  numeroElemento++;
+  std::cout << "O numero " << array[posicao]
+            << " foi adicionado na lista" << std::endl;
+  std::cout << "Atualizando o tamanho da lista: " << numeroElemento
+            << std::endl << std::endl;
+  return true;
 }

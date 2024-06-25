@@ -3,7 +3,7 @@
 bool Lista::exclueElemento(TIPOCHAVE chave){
     int posicaoLista = buscaSequencial(chave);
     if(posicaoLista == -1){
-        std::cout << "Elemento nao encontrado na lista" << std::endl;
+        std::cout << "Elemento nao encontrado na lista" << std::endl << std::endl;
         return false;
     }
     else{
@@ -11,8 +11,8 @@ bool Lista::exclueElemento(TIPOCHAVE chave){
             array[j] = array[j + 1];
         }
         numeroElemento--;
-        std::cout << "Elemento " << chave << " deletado com sucesso!" << std::endl;
-        std::cout << "O tamanho da lista atualizado: " << numeroElemento << std::endl;
+        std::cout << "Elemento " << chave << " deletado com sucesso!" << std::endl << std::endl;
+        std::cout << "O tamanho da lista atualizado: " << numeroElemento << std::endl << std::endl;
         return true;
     }
 }

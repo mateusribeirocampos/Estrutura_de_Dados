@@ -24,7 +24,7 @@ class Lista {
         int tamanhoLista() const;
         void exibeLista();
         int buscaSequencial(TIPOCHAVE chave);
-        bool insereElemento(Registro registro);
+        bool insereElemento(Registro registro, int posicao);
         bool exclueElemento(TIPOCHAVE chave);
         void reiniciaLista();
 };

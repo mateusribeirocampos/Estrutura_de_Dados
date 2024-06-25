@@ -7,6 +7,7 @@ int Lista::buscaSequencial(TIPOCHAVE chave){
             std::cout << "Elemento " << chave << " encontrado" << std::endl;
             return i;
         }
+        i++;
     }
     std::cout << "Elemento " << chave << " nao encontrado!" << std::endl;
     return -1;
