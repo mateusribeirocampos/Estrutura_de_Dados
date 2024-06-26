@@ -51,10 +51,18 @@ O estudo foi estruturado no repositório nesse formato:
       - 08vetores-ponteiros.cpp
       - 09extraPassagem-ponteiro.cpp
     - 02listas-sequenciais/
+      - buscaBinaria.cpp
+      - buscaSequencial.cpp
+      - exclueElemento.cpp
       - implementacao.cpp
-      - insercao.cpp
-      - remocao.cpp
-      - busca.cpp
+      - implementacao.h
+      - inicializaLista.cpp
+      - insereElemento.cpp
+      - insereElementoOrdenado.cpp
+      - Main.cpp
+      - MainBuscaBinaria.cpp
+      - reiniciaLista.cpp
+      - tamanhoLista.cpp
     - 03lista-encadeada/
       - implementacao.cpp
       - insercao.cpp
