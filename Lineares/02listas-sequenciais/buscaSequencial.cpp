@@ -1,6 +1,6 @@
 #include "implementacao.h"
 
-int Lista::buscaSequencial(TIPOCHAVE chave){
+int Lista::buscaSequencial(TIPOCHAVE chave) const {
     int i = 0;
     while(i < numeroElemento){
         if(chave == array[i].chave){

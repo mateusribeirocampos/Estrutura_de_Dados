@@ -1,7 +1,7 @@
 #include "implementacao.h"
 
 bool Lista::exclueElemento(TIPOCHAVE chave){
-    int posicaoLista = buscaSequencial(chave);
+    int posicaoLista = buscaBinaria(chave, 0, tamanhoLista() - 1);
     if(posicaoLista == -1){
         std::cout << "Elemento nao encontrado na lista" << std::endl << std::endl;
         return false;
