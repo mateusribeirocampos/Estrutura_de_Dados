@@ -9,15 +9,11 @@ int main(){
     Registro reg3 = {2};
     Registro reg4 = {3};
 
-    lista.insereElemento(reg1, 0);
-    lista.insereElemento(reg2, 1);
-    lista.insereElemento(reg3, 2);
-    lista.insereElemento(reg4, 3);
+    lista.insereElementoOrdenado(reg1);
+    lista.insereElementoOrdenado(reg2);
+    lista.insereElementoOrdenado(reg3);
+    lista.insereElementoOrdenado(reg4);
 
-    std::cout << "Lista original: ";
-    lista.exibeLista();
-
-    lista.ordenaLista();
     std::cout << "Lista ordenada: ";
     lista.exibeLista();
 
@@ -28,7 +24,7 @@ int main(){
     int elementoUsuario;
     std::cout << "Digite o elemento a ser buscado: ";
     std::cin >> elementoUsuario;
-    int encontraElemento = lista.buscaBinaria(elementoUsuario, 0, lista.tamanhoLista() - 1);
+    int encontraElemento = lista.buscaBinaria(elementoUsuario);
     if(encontraElemento == -1){
         std::cout << "Elemento não encontrado!" << std::endl;
     }
@@ -40,7 +36,7 @@ int main(){
 
     std::cout << "Digite o elemento a ser buscado: ";
     std::cin >> elementoUsuario;
-    encontraElemento = lista.buscaBinaria(elementoUsuario, 0, lista.tamanhoLista() - 1);
+    encontraElemento = lista.buscaBinaria(elementoUsuario);
     if(encontraElemento == -1){
         std::cout << "Elemento não encontrado!" << std::endl;
     }

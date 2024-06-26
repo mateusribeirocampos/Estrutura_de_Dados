@@ -2,7 +2,7 @@
 
 bool Lista::insereElemento(Registro reg, int posicao) {
   if (numeroElemento >= MAX) {
-    std::cout << "Lista cheia!" << std::endl;
+    std::cout << "Lista cheia! Elemento nao pode ser inserido na lista!" << std::endl;
     return false;
   } else if ((posicao < 0) || (posicao > MAX)) {
     std::cout << "a chave do registro esta fora do intervalo valido!"

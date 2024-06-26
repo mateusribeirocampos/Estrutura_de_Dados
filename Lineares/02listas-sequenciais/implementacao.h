@@ -25,10 +25,10 @@ public:
   int tamanhoLista() const;
   void exibeLista() const;
   int buscaSequencial(TIPOCHAVE chave) const;
-  int buscaBinaria(TIPOCHAVE chave, int esquerda, int direita) const;
+  int buscaBinaria(TIPOCHAVE chave) const;
   bool insereElemento(Registro registro, int posicao);
+  bool insereElementoOrdenado(Registro registro);
   bool exclueElemento(TIPOCHAVE chave);
-  void ordenaLista();
   void reiniciaLista();
 };
 #endif
