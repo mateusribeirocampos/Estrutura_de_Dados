@@ -64,6 +64,16 @@ O estudo foi estruturado no repositório nesse formato:
       - reiniciaLista.cpp
       - tamanhoLista.cpp
     - 03lista-encadeada/
+        01lista-encadeada-estatica/
+          01lista-encadeada-estatica-C/
+          - buscaSequencialOrd.c
+          - excluirElemento.c
+          - implementacao.c
+          - implementacao.h
+          - insereElemento.c
+          - incializaLista.c
+          - reiniciaLista.c
+          02lista-encadeada-estatica-CPP/
       - implementacao.cpp
       - insercao.cpp
       - remocao.cpp
