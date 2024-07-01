@@ -2,7 +2,7 @@
 #define IMPLEMENTATION_H
 #include <stdbool.h>
 
-#define MAX 50
+#define MAX 5
 #define INVALID -1
 
 typedef int KeyType;

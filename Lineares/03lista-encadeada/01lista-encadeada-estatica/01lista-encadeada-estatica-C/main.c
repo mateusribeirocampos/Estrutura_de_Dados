@@ -31,5 +31,9 @@ int main(){
 
     printList(&list);
 
+    delElemList(&list, 20);
+
+    printList(&list);
+
     return 0;
 }
