@@ -1,39 +1,39 @@
 #include "implementation.h"
 #include <stdio.h>
 
-int main(){
-    LinkedList list;
+int main() {
+  LinkedList list;
 
-    startList(&list);
+  startList(&list);
 
-    Records rec;
+  Records rec;
 
-    rec.key = 30;
-    insertionElemListSort(&list, rec);
+  rec.key = 30;
+  insertionElemListSort(&list, rec);
 
-    rec.key = 10;
-    insertionElemListSort(&list, rec);
+  rec.key = 10;
+  insertionElemListSort(&list, rec);
 
-    rec.key = 20;
-    insertionElemListSort(&list, rec);
+  rec.key = 20;
+  insertionElemListSort(&list, rec);
 
-    rec.key = 40;
-    insertionElemListSort(&list, rec);
+  rec.key = 40;
+  insertionElemListSort(&list, rec);
 
-    printList(&list);
+  printList(&list);
 
-    int findElement = sequentialSearchSort(&list, 20);
-    if(findElement != INVALID){
-        printf("Elemento 20 encontrado na posição: %d\n", findElement);
-    } else {
-        printf("Elemento 20 não encontrado\n");
-    }
+  int findElement = sequentialSearchSort(&list, 20);
+  if (findElement != INVALID) {
+    printf("Element 20 found in the position: %d\n", findElement);
+  } else {
+    printf("Element 20 not found in thel list\n");
+  }
 
-    printList(&list);
+  printList(&list);
 
-    delElemList(&list, 20);
+  delElemList(&list, 20);
 
-    printList(&list);
+  printList(&list);
 
-    return 0;
+  return 0;
 }
