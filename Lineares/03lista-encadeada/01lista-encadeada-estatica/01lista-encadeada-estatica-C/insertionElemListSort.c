@@ -5,7 +5,7 @@
 bool insertionElemListSort(LinkedList *list, Records rec) {
   // Verifica se a lista está cheia
   if (list->available == INVALID) {
-    printf("The element cannot be inserted the list is full!");
+    printf("\nThe list is full!\nThe element %d cannot be inserted into the list!\n\n", rec.key);
     return false;
   }
 
@@ -18,28 +18,29 @@ bool insertionElemListSort(LinkedList *list, Records rec) {
 
   // Encontra a posição correta para ser inserido
   while ((i != INVALID) && (list->array[i].rec.key < key)) {
-    printf("First condition while the current element is not valid and the "
+    printf("\nFirst condition while the current element is not valid and the "
            "list->array[i].rec.key is lower than key\n");
     previous = i;
     printf("Values of previous = %i\n", previous);
     i = list->array[i].next;
-    // Se o i for válido
-    if (i != INVALID) {
-      printf("Values i = list->array[i].next = %i\n", list->array[i].next);
-    }
+    printf("Values i = list->array[i].next = %i\n", i);
   }
 
   // Verficação da duplicação do elemento - Se a chave já existe na lista
   if (i != INVALID && list->array[i].rec.key == key) {
-    printf("if the i not valid and list->array[i].rec.key == key\n");
+    printf("\nThe element %d is duplicate and it cannot be inserted into the list!\n", rec.key);
     return false;
   }
 
   // Obter no Nó o getNode retorna o índice de um nó disponível na lista
   // O novo registro é atribuído a esse nó.
   i = getNode(list);
+  if(i == INVALID){
+    printf("\nThe element %d cannot be insert into the list", rec.key);
+    return false;
+  }
   list->array[i].rec = rec;
-  printf("list->array[i].rec received the value in rec = %d\n",
+  printf("\nlist->array[i].rec received the value in rec = %d\n",
          list->array[i].rec.key);
 
   // Insere o novo nó na lista
@@ -58,5 +59,6 @@ bool insertionElemListSort(LinkedList *list, Records rec) {
     printf("list->array[i].next = %d\n", list->array[i].next);
     printf("list->array[previous].next = %d\n", list->array[previous].next);*/
   }
+  printf("The element was inserted with sucess!\n");
   return true;
 }

@@ -14,26 +14,41 @@ int main() {
   rec.key = 10;
   insertionElemListSort(&list, rec);
 
-  rec.key = 20;
+  rec.key = 30;
   insertionElemListSort(&list, rec);
 
   rec.key = 40;
   insertionElemListSort(&list, rec);
 
-  printList(&list);
+  rec.key = 50;
+  insertionElemListSort(&list, rec);
 
-  int findElement = sequentialSearchSort(&list, 20);
+  printList(&list);
+  printNode(&list);
+
+  rec.key = 10;
+  int findElement = sequentialSearchSort(&list, rec.key);
   if (findElement != INVALID) {
-    printf("Element 20 found in the position: %d\n", findElement);
+    printf("Element %d found in the position: %d\n", rec.key, findElement);
   } else {
-    printf("Element 20 not found in thel list\n");
+    printf("Element %d not found in thel list\n", rec.key);
   }
 
   printList(&list);
 
-  delElemList(&list, 20);
+  rec.key = 10;
+  printf("\nDeleting element from list\n");
+  bool deletedElement = delElemList(&list, rec.key);
+  if(deletedElement == true){
+    printf("The element %d was found and deleted from list\n", rec.key);
+  } else {
+    printf("The element was not found\n");
+  }
 
+  printf("Current ");
   printList(&list);
+  listSize(&list);
+  printNode(&list);
 
   return 0;
 }

@@ -2,7 +2,7 @@
 #define IMPLEMENTATION_H
 #include <stdbool.h>
 
-#define MAX 5
+#define MAX 3
 #define INVALID -1
 
 typedef int KeyType;
@@ -26,6 +26,7 @@ typedef struct {
 void startList(LinkedList *list);
 int listSize(LinkedList *list);
 void printList(LinkedList *list);
+void printNode(LinkedList *list);
 int sequentialSearchSort(LinkedList *list, KeyType key);
 int getNode(LinkedList *list);
 bool insertionElemListSort(LinkedList *list, Records rec);

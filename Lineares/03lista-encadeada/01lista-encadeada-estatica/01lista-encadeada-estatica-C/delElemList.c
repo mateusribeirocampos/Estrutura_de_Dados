@@ -1,4 +1,5 @@
 #include "implementation.h"
+#include <stdio.h>
 #include <stdbool.h>
 
 bool delElemList(LinkedList *list, KeyType key) {
