@@ -1,5 +1,6 @@
 #include "implementacao.h"
 
-int Lista::tamanhoLista() const {
-    return numeroElemento;
+int Lista::tamanhoLista() const
+{
+  return numeroElemento;
 }

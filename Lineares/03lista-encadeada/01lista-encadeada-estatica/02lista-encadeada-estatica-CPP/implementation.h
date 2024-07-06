@@ -33,6 +33,8 @@ public:
   void printNode();
   bool insertionElemListSort(Records rec);
   int getNode();
+  void returnNode(int node);
+  bool delElemList(KEYTYPE key);
 };
 
 #endif
