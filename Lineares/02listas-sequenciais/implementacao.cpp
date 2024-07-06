@@ -2,11 +2,13 @@
 #include <iostream>
 
 // Implementação da sobrecarga do operador de inserção
-std::ostream& operator<<(std::ostream& os, const Registro& reg){
-    os << reg.chave;
-    return os;
+std::ostream &operator<<(std::ostream &os, const Registro &reg)
+{
+  os << reg.chave;
+  return os;
 }
 
-Lista::Lista(){
-    inicializaLista();
+Lista::Lista()
+{
+  inicializaLista();
 }

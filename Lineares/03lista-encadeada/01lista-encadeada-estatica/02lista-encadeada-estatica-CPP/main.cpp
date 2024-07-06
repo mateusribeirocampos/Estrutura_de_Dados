@@ -40,5 +40,10 @@ int main() {
   std::cout << "List updating" << std::endl;
   list.printList();
 
+  list.delElemList(5);
+
+  std::cout << "List updating" << std::endl;
+  list.printList();
+
   return 0;
 }

@@ -1,5 +1,6 @@
 #include "implementacao.h"
 
-void Lista::inicializaLista(){
-    numeroElemento = 0;
+void Lista::inicializaLista()
+{
+  numeroElemento = 0;
 }

@@ -6,7 +6,8 @@
 
 using TIPOCHAVE = int;
 
-struct Registro {
+struct Registro
+{
 public:
   TIPOCHAVE chave;
 };
@@ -14,7 +15,8 @@ public:
 // Sobrecarga do operador de inserção para permitir impressão de Registro
 std::ostream &operator<<(std::ostream &os, const Registro &reg);
 
-class Lista {
+class Lista
+{
 private:
   Registro array[MAX];
   int numeroElemento;
