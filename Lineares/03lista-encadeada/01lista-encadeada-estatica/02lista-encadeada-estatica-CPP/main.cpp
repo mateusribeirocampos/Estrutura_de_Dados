@@ -45,5 +45,9 @@ int main() {
   std::cout << "List updating" << std::endl;
   list.printList();
 
+  list.restartList();
+  std::cout << "List updating" << std::endl;
+  list.printList();
+
   return 0;
 }

@@ -35,6 +35,7 @@ public:
   int getNode();
   void returnNode(int node);
   bool delElemList(KEYTYPE key);
+  void restartList();
 };
 
 #endif
