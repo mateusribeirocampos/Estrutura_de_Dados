@@ -45,6 +45,7 @@ int main() {
   std::cout << "List updating" << std::endl;
   list.printList();
 
+  std::cout << "Restating list of element" << std::endl << std::endl;
   list.restartList();
   std::cout << "List updating" << std::endl;
   list.printList();
