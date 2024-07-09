@@ -7,7 +7,6 @@ Existem dois tipos principais de estruturas de dados:
 1. **Estruturas de Dados Lineares:** Essas estruturas organizam os dados de forma sequencial, onde cada elemento está ligado ao anterior e ao próximo. Os dados são acessados de forma ordenada e podem ser percorridos em uma única passagem. Exemplos comuns incluem vetores, listas encadeadas, pilhas e filas.
 
 2. **Estruturas de Dados Não Lineares:** Essas estruturas não possuem uma ordem sequencial definida entre os elementos. Os dados são organizados de forma mais complexa, geralmente em forma de árvores ou grafos. Exemplos incluem árvores binárias, árvores de busca, árvores AVL e grafos.
-Representação de Vetores em C++
 
 ## Estruturas de Dados Lineares
 

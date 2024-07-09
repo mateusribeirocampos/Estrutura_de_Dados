@@ -8,8 +8,25 @@
 #include <iostream>
 
 typedef struct no {
-  int valor;
-  struct no *proximo;
+  int value;
+  struct no *nextNode;
 } No;
+
+typedef struct lista {
+  No *firstNode;
+  int size;
+} Lista;
+
+// or using class
+class no {
+  int value;
+  no *nextNode;
+};
+
+class lista {
+  no *firstNode;
+  int size;
+};
+
 
 int main() { return 0; }
