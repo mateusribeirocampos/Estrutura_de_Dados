@@ -1,11 +1,9 @@
 #include <iostream>
-
 typedef struct no
 {
 	int valor;
 	struct no *proximo;
 } No;
-
 void inserirNoInicio(No *&lista, int num)
 {
 	No *novo = new No; // novo é o novo nó
@@ -24,7 +22,6 @@ void inserirNoInicio(No *&lista, int num)
 void inserirNoFinal(No *&lista, int num)
 {
 	No *aux, *novo = new No;
-
 	if (novo)
 	{
 		novo->valor = num;
@@ -49,15 +46,14 @@ void inserirNoFinal(No *&lista, int num)
 	}
 }
 
-void inserirNoMeio(No *&lista, int num, int anterior){
+void inserirNoMeio(No *&lista, int num, int anterior)
+{
 	No *aux, *novo = new No;
-
-	if(novo)
+	if (novo)
 	{
 		novo->valor = num;
-
 		// Se a lista não tiver nenhum valor adicionado
-		if(lista == nullptr)
+		if (lista == nullptr)
 		{
 			// Adiciona o novo nó no inicio da lista
 			novo->proximo = nullptr;
@@ -67,11 +63,11 @@ void inserirNoMeio(No *&lista, int num, int anterior){
 		else
 		{
 			aux = lista;
-			while(aux->proximo && aux->proximo->valor != anterior)
+			while (aux->proximo && aux->proximo->valor != anterior)
 			{
 				aux = aux->proximo;
 			}
-			if(aux->proximo == nullptr)
+			if (aux->proximo == nullptr)
 			{
 				// Elemento anterior não encontrado
 				std::cout << "Elemento anterior não encontrado na lista." << std::endl;
@@ -87,8 +83,6 @@ void inserirNoMeio(No *&lista, int num, int anterior){
 		std::cout << "Erro ao alocar memoria!" << std::endl;
 	}
 }
-
-
 void imprimirLista(No *no)
 {
 	std::cout << "\n\tLista: ";
@@ -97,9 +91,9 @@ void imprimirLista(No *no)
 		std::cout << " " << no->valor;
 		no = no->proximo;
 	}
-	std::cout << std::endl << std::endl;
+	std::cout << std::endl
+			  << std::endl;
 }
-
 void menuInicial()
 {
 	int opcoes, valor, anterior;
@@ -116,7 +110,6 @@ void menuInicial()
 		std::cout << "-------------------------" << std::endl;
 		std::cout << "Digite uma opcao" << std::endl;
 		std::cin >> opcoes;
-
 		switch (opcoes)
 		{
 		case 1:
@@ -150,14 +143,10 @@ void menuInicial()
 		default:
 			std::cout << "Opcao invalida!" << std::endl;
 		}
-
 	} while (opcoes != 6);
 }
-
 int main()
 {
-
 	menuInicial();
-
 	return 0;
 }

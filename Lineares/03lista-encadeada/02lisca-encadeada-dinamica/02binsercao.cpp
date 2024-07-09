@@ -1,28 +1,23 @@
 #include <iostream>
-
 // Definição da estrutura do nó da lista
 typedef struct no
 {
     int valor;
     struct no *proximo;
 } No;
-
 typedef struct{
     No *inicio;
     int tam;
 }Lista;
-
 void criar_lista(Lista *lista){
     lista->inicio = NULL;
     lista->tam = 0;
 }
-
 // Procedimento para inserir no início da lista
 void inserir_no_inicio(Lista *lista, int num)
 {
     // Aloca memória para um novo nó
     No *novo = new No;
-
     if (novo)
     {
         // Define o valor do novo nó
@@ -40,20 +35,17 @@ void inserir_no_inicio(Lista *lista, int num)
         std::cout << "Erro ao alocar memoria!\n" << std::endl;
     }
 }
-
 // Procedimento para inserir no final da lista
 void inserir_no_final(Lista *lista, int num)
 {
     // Declaração de variáveis auxiliares
     No *aux, *novo = new No;
-
     if (novo)
     {
         // Define o valor do novo nó
         novo->valor = num;
         // Define o próximo do novo nó como nulo, pois ele será o último da lista
         novo->proximo = nullptr;
-
         // Se a lista estiver vazia, o novo nó se torna o primeiro da lista
         if (lista->inicio == nullptr)
         {
@@ -79,7 +71,6 @@ void inserir_no_final(Lista *lista, int num)
         std::cout << "Erro ao alocar memoria!\n" << std::endl;
     }
 }
-
 // Procedimento para inserir no meio da lista
 void inserir_no_meio(Lista *lista, int num, int anterior)
 {
@@ -90,7 +81,6 @@ void inserir_no_meio(Lista *lista, int num, int anterior)
     {
         // Define o valor do novo nó
         novo->valor = num;
-        
         // Se a lista estiver vazia, o novo nó se torna o primeiro da lista
         if (lista->inicio == nullptr)
         {
@@ -117,7 +107,6 @@ void inserir_no_meio(Lista *lista, int num, int anterior)
         std::cout << "Erro ao alocar memoria!\n" << std::endl;
     }
 }
-
 // Procedimento para imprimir a lista
 void imprimir(Lista lista)
 {
@@ -131,7 +120,6 @@ void imprimir(Lista lista)
     }
     std::cout << std::endl << std::endl;
 }
-
 // Função principal
 int main()
 {
@@ -139,9 +127,7 @@ int main()
     // Declaração do ponteiro para o início da lista
     //No *lista = nullptr;
     Lista lista;
-
     criar_lista(&lista);
-
     // Loop principal do programa
     do
     {
@@ -153,7 +139,6 @@ int main()
         std::cout << "\n\t4 - Imprimir" << std::endl;
         std::cout << "Digite sua opcao: ";
         std::cin >> opcao;
-
         // Realiza a operação de acordo com a opção escolhida pelo usuário
         switch (opcao)
         {
@@ -183,6 +168,5 @@ int main()
             }
         }
     } while (opcao); // Continua o loop até que a opção '0' seja selecionada
-
     return 0;
 }

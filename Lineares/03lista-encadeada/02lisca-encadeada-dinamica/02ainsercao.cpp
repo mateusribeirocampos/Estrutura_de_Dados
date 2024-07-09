@@ -1,18 +1,15 @@
 #include <iostream>
-
 // Definição da estrutura do nó da lista
 typedef struct no
 {
     int valor;
     struct no *proximo;
 } No;
-
 // Procedimento para inserir no início da lista
 void inserir_no_inicio(No **lista, int num)
 {
     // Aloca memória para um novo nó
     No *novo = new No;
-
     if (novo)
     {
         // Define o valor do novo nó
@@ -28,7 +25,6 @@ void inserir_no_inicio(No **lista, int num)
         std::cout << "Erro ao alocar memoria!\n" << std::endl;
     }
 }
-
 // Procedimento para inserir no final da lista
 void inserir_no_final(No **lista, int num)
 {
@@ -41,7 +37,6 @@ void inserir_no_final(No **lista, int num)
         novo->valor = num;
         // Define o próximo do novo nó como nulo, pois ele será o último da lista
         novo->proximo = nullptr;
-
         // Se a lista estiver vazia, o novo nó se torna o primeiro da lista
         if (*lista == nullptr)
         {
@@ -65,13 +60,11 @@ void inserir_no_final(No **lista, int num)
         std::cout << "Erro ao alocar memoria!\n" << std::endl;
     }
 }
-
 // Procedimento para inserir no meio da lista
 void inserir_no_meio(No **lista, int num, int anterior)
 {
     // Declaração de variáveis auxiliares
     No *aux, *novo = new No;
-
     if (novo)
     {
         // Define o valor do novo nó
@@ -102,7 +95,6 @@ void inserir_no_meio(No **lista, int num, int anterior)
         std::cout << "Erro ao alocar memoria!\n" << std::endl;
     }
 }
-
 // Procedimento para imprimir a lista
 void imprimir(No *no)
 {
@@ -115,14 +107,12 @@ void imprimir(No *no)
     }
     std::cout << std::endl << std::endl;
 }
-
 // Função principal
 int main()
 {
     int opcao, valor, anterior;
     // Declaração do ponteiro para o início da lista
     No *lista = nullptr;
-
     // Loop principal do programa
     do
     {
