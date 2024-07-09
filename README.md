@@ -1,4 +1,4 @@
-# Estruturas de Dados
+# Estudo sobre Estruturas de Dados
 
 As estruturas de dados são formas de organizar e armazenar dados de maneira eficiente para que possam ser acessados e modificados de forma rápida e fácil. Elas são fundamentais na ciência da computação e são usadas em uma variedade de aplicações, desde simples programas até sistemas complexos.
 
