@@ -140,3 +140,149 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para d
 ou [Estruturas abertas](https://opendatastructures.org/)
 
 [Geeks for Geeks - Data Structures](https://www.geeksforgeeks.org/data-structures/)
+
+========================================================================================
+
+## Data Structure
+
+Data structures are ways of organizing and storing data efficiently so that it can be accessed and modified quickly and easily. They are fundamental in computer science and are used in a variety of applications, from simple programs to complex systems.
+
+## There are two main types of data structures
+
+1. **Linear Data Structures:** These structures organize data sequentially, where each element is linked to the previous and the next. Data is accessed in an ordered manner and can be traversed in a single pass. Common examples include arrays, linked lists, stacks, and queues.
+
+2. **Non-Linear Data Structures:** These structures do not have a defined sequential order among elements. Data is organized more complexly, usually in the form of trees or graphs. Examples include binary trees, search trees, AVL trees, and graphs.
+
+## Linear Data Structures
+
+Linear data structures are those in which elements are organized sequentially, where each element is linked to the previous and the next. This allows for ordered data access and traversal in a single pass. Here are some common examples of linear data structures:
+
+1. **Array:** A collection of elements of the same type, organized in a contiguous memory sequence.
+
+2. **Static List:** A collection of elements stored contiguously, where operations such as insertion, removal, and search are performed in a fixed array.
+
+3. **Linked List:** A collection of elements, where each element (node) contains a value and a pointer to the next node in the sequence.
+
+4. **Stack:** A LIFO (Last In, First Out) data structure, where elements are inserted and removed at the same end.
+
+5. **Queue:** A FIFO (First In, First Out) data structure, where elements are inserted at one end and removed at the other.
+
+## Non-Linear Data Structures
+
+1. **Binary Tree:** A data structure where each node has at most two children, known as the left child and the right child. Binary trees are often used in search algorithms and more complex data structures, such as binary search trees and AVL trees.
+
+2. **Binary Search Tree (BST):** A binary tree in which nodes are organized such that, for each node, all nodes to the left have smaller values, and all nodes to the right have larger values. This allows for efficient element search in logarithmic time.
+
+3. **AVL Tree:** A balanced binary search tree in which the height of the left and right subtrees of each node differs by at most one unit. This ensures the tree remains balanced and maintains operation performance such as insertion, deletion, and search in logarithmic time.
+
+4. **B-Tree:** A search tree that is a generalization of the binary search tree, in which each node can have more than two children. B-trees are often used in databases and file systems to organize large volumes of data.
+
+5. **Graph:** A data structure consisting of a set of vertices (or nodes) and a set of edges (or connections) that connect these vertices. Graphs can be directed (when edges have a direction) or undirected (when edges have no direction). They are used in a variety of problems, including computer networks, transportation systems, and social network analysis.
+
+The study was structured in the repository in this format:
+
+```cmd
+- data-structures/
+  - linear/
+    - 01arrays/
+      - 01vecto-syntax.cpp
+      - 02vector-insertion.cpp
+      - 03vector-removal.cpp
+      - 04vector-access.cpp
+      - 05vector-dynamic-allocation.cpp
+      - 06vector-struct.cpp
+      - 07vector-constant.cpp
+      - 08vector-pointers.cpp
+      - 09extra-pointer.cpp
+    - 02static-lists/
+      - binarySearch.cpp
+      - sequentialSearch.cpp
+      - removeElement.cpp
+      - implementation.cpp
+      - implementation.h
+      - initializeList.cpp
+      - insertElement.cpp
+      - insertSortedElement.cpp
+      - Main.cpp
+      - MainBinarySearch.cpp
+      - resetList.cpp
+      - listSize.cpp
+    - 03linked-list/
+        01static-linked-list/
+          01static-linked-list-C/
+          - sequentialSearchOrdered.c
+          - removeElement.c
+          - implementation.c
+          - implementation.h
+          - insertElement.c
+          - initializeList.c
+          - resetList.c
+          02static-linked-list-CPP/
+      - implementation.cpp
+      - insertion.cpp
+      - removal.cpp
+    - 04stack/
+      - implementation.cpp
+      - operations.cpp
+    - 05queue/
+      - implementation.cpp
+      - operations.cpp
+  - non-linear/
+    - binary-tree/
+      - implementation.cpp
+      - search.cpp
+      - insertion.cpp
+      - removal.cpp
+    - binary-search-tree/
+      - implementation.cpp
+      - search.cpp
+      - insertion.cpp
+      - removal.cpp
+    - avl-tree/
+      - implementation.cpp
+      - search.cpp
+      - insertion.cpp
+      - removal.cpp
+    - b-tree/
+      - implementation.cpp
+      - search.cpp
+      - insertion.cpp
+      - removal.cpp
+    - graph/
+      - implementation.cpp
+      - breadth-first-search.cpp
+      - depth-first-search.cpp
+      - dijkstra-algorithm.cpp
+```
+
+## How to Use
+
+Clone the repository:
+
+```cmd
+git clone https://github.com/your-username/data-structures.git
+cd data-structures
+````
+
+Navigate to the desired folder and compile the file:
+
+```cmd
+cd linear/01arrays
+g++ 01array-syntax.cpp -o array-syntax
+./array-syntax
+```
+
+## Contributions
+
+Contributions are welcome! Feel free to open issues and submit pull requests. Please follow coding best practices and document your code well.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## References
+
+[Open Structure - org](https://opendatastructures.org/)
+ou [Estruturas abertas](https://opendatastructures.org/)
+
+[Geeks for Geeks - Data Structures](https://www.geeksforgeeks.org/data-structures/)
