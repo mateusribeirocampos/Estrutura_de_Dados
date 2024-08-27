@@ -1,7 +1,6 @@
 #include "implementacao.h"
 
-int main()
-{
+int main() {
   Lista lista;
 
   Registro reg1 = {2};
@@ -24,12 +23,9 @@ int main()
   std::cout << "Digite o elemento a ser buscado:" << std::endl;
   std::cin >> elementoUsuario;
   int encontraElemento = lista.buscaSequencial(elementoUsuario);
-  if (encontraElemento == -1)
-  {
+  if (encontraElemento == -1) {
     std::cout << "Elemento nao encontrado!" << std::endl;
-  }
-  else
-  {
+  } else {
     std::cout << "Elemento encontrado!" << std::endl;
   }
 
@@ -38,12 +34,9 @@ int main()
   std::cout << "Digite o elemento a ser buscado:" << std::endl;
   std::cin >> elementoUsuario;
   encontraElemento = lista.buscaSequencial(elementoUsuario);
-  if (encontraElemento == -1)
-  {
+  if (encontraElemento == -1) {
     std::cout << "Elemento nao encontrado!" << std::endl;
-  }
-  else
-  {
+  } else {
     std::cout << "Elemento encontrado!" << std::endl;
   }
 
